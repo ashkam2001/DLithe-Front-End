@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Javascript JSON</title>
+    </head>
+    <body>
+        <script>
+            <!--
+                // JavaScriptObjectNotation
+                let simple={"title":"DLithe Front end Internship"}
+                //alert(simple.title);
+                //alert(simple['title']);
+
+                const lapInfo={"brand":"DELL","ram":8,"ssd":512,"isGPU":true}
+
+                /*document.writeln("<p>The Laptop Brand is "+ lapInfo.brand +"</p>");
+                document.writeln("<p>The Laptop RAM capacity "+ lapInfo.ram +"</p>");
+                document.writeln("<p>The Laptop SSD Capacity "+ lapInfo.ssd +"</p>");
+                document.writeln("<p>Does The Laptop Contains GPU "+ lapInfo.isGPU +"</p>");*/
+
+
+                /*for(const key in lapInfo)
+                {
+                    document.writeln("<p>"+key+" is "+ lapInfo[key] +"</p>");
+                }*/
+
+
+                const car={"model":"Amaze","varient":['rythym','xmt','xme','xmt plus'],"brand":"Honda","year":2021}
+
+                /*for(const key in car)
+                {
+                    if(key != 'varient')
+                        document.writeln("<p>"+key+" is "+ car[key] +"</p>");
+                    else
+                    {
+                        document.writeln("<br/>Following varients are available: <br/>");
+                        for(const pos in car[key])
+                        {
+                            document.writeln("<b>"+ car[key][pos] +"</b><br/>")
+                        }
+                    }
+                }*/
+
+                const vehicles={
+                    name:"Ashwin Kamath",
+                    bikes:{
+                        gear:"Avenger 220 cruise",
+                        gearless:"Acces 125",
+                    },
+                    place:"Mangalore"
+                    }
+                
+                for(const key in vehicles)
+                {
+                    if(key!='bikes')
+                        document.writeln("<p>"+key+" is "+ vehicles[key] +"</p>");
+                    else
+                    {
+                        for(const each in vehicles[key])
+                        {
+                            document.writeln("<p>"+key+" is "+ vehicles[key][each] +"</p>");
+                        }
+                    }
+                }
+
+            //-->
+        </script>
+    </body>
+</html>
